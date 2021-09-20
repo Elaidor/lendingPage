@@ -1,0 +1,329 @@
+:root {
+    --tablet-padding: 45px 0;
+    --phone-padding:25px 0;
+  }
+@media screen and (max-width: 1025px){
+    .container{
+        max-width: 980px;
+    }
+    .main-heading{
+        margin-top: 50px;
+    }
+    .main-position {
+        width: 415px;
+        left: 25px;
+        bottom: 5px;
+    }    
+    .weDo-block {
+        padding: 70px 0;
+    }
+    .weDo-features-block {
+        padding: 35px 20px;
+    }
+    .weDo-features-heading{
+        margin-bottom: 15px;
+    }
+    .process{
+        padding: 70px 0;
+    }
+    .process-block span{
+        text-align: center;
+    }
+    .process-line{
+        max-width: 130px;
+    }
+    .projects {
+        padding: 70px 0 70px 0;
+    }
+    .project-block{
+        margin-right: 5px;
+        width: calc(100%/3);
+    }
+    .journal {
+        padding: 70px 0 60px 0;
+    }
+    .journal-block{
+        margin-right: 5px;
+        width: calc(100%/3);
+    }
+    footer{
+        padding-top: 60px;
+    }
+    .footer-copyring {
+        margin-top: 45px;
+    }
+    .footer-copyring div {
+        padding: 35px 0;
+    }    
+}
+@media screen and (max-width: 770px){
+    .container {
+        max-width: 745px;
+    }
+    header{
+        padding: 20px 0;
+    }
+    .line-heading{
+        margin-bottom: 30px;
+    }
+    .line-heading h2 {
+        margin: 0px 10px;
+    }
+    .line-heading img{
+        width: 20%;
+    }
+    .top-menu{
+        display: block;
+        position: absolute;
+        top: 82px;
+        background: rgb(245, 246, 246);
+        box-shadow: #ccc;
+        width: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+        transition: all 0.4s ease;
+        left: -100%;
+        overflow: auto;
+        z-index: 100;
+    }
+    .open-menu{
+        left:0;
+    }
+    .nav-menu {
+        display: block;
+    }
+    
+    .nav-menu li {
+        margin: 40px 0px 40px 33px; 
+        font-size: 14px;
+    }
+    .menu-burger{
+        position: relative; 
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+    }
+    .menu-burger span, .menu-burger:after, .menu-burger:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .menu-burger span{
+        top: 16px;
+    }
+    .menu-burger:after, .menu-burger:before{
+        content: '';
+    }
+    .menu-burger:after{
+        bottom: 5px;
+    }
+    .menu-burger:before{
+        top: 5px;
+    }
+    .menu-burger.open-menu span {
+        opacity:0; 
+        transition: 0.5s; 
+    }
+    .menu-burger.open-menu:before {
+        transform: rotate(38deg);
+        top: 16px;
+        transition: 0.4s;
+    }
+    .menu-burger.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 16px;
+        transition: 0.4s;
+    }
+    .fixed-page{
+        overflow: hidden; 
+    }
+    .main-heading {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .main-text {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .main-slider{
+        height: 347px;
+        background-size: cover;
+    }
+    .main-position{
+        width: 400px;
+        left: 15px;
+        bottom: 0px;
+    }
+    .slider-top {
+        font-size: 16px;
+    }
+    .main-slider p{
+        padding: 14px 5px;
+    }
+    .weDo-block {
+        padding: var(--tablet-padding);
+    }
+    .media-flex{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .weDo-features-block {
+        padding: 10px 15px;
+    }
+    .weDo-features-heading{
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .weDo-outline{
+        width:45%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .weDo-outline:nth-child(1n){
+        margin-right: 10px;
+    }
+    .process {
+        padding: var(--tablet-padding);
+    }
+    .process-block{
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    .process-line {
+        display: none;
+    }
+    .projects {
+        padding: var(--tablet-padding);
+    }
+    .project-block h3 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .customers{
+        padding: var(--tablet-padding);
+    }
+    .customers .line-heading{
+        margin-bottom: 0;
+    }
+    .customers p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #nav-btns{
+        bottom: 40px;
+    }
+    .journal{
+        padding: var(--tablet-padding);
+    }
+    .footer-block{
+        width: 45%;
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .phone-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        padding: 10px 0;
+    }
+    .nav-menu li {
+        margin: 20px 0px 25px 12px;
+        font-size: 12px;
+    }
+    .main-heading {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .main-text {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .main-slider {
+        height: 250px;
+        background-size: cover;
+    }
+    .main-position {
+        width: 85%;
+        left: 10px;
+    }
+    .main-slider p {
+        padding: 10px 5px;
+    }
+    .slider-description,.slider-top {
+        font-size: 14px;
+    }
+    .weDo-block,.process,.projects,.customers,.journal {
+        padding: var(--phone-padding);
+    }
+    .weDo-outline {
+        width: 90%;
+        align-self: center;
+        margin-bottom: 5px;
+    }
+    .weDo-outline:nth-child(1n) {
+        margin-right: 0;
+    }
+    .weDo-features-heading {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .process .line-heading {
+        margin-bottom: 0px;
+    }
+    .process-block {
+        margin-right: 0;
+        margin-bottom: 0;
+        transition: all 400ms;
+    }
+    .process-block img {
+        display: none;
+    }   
+    
+    .process-block span:hover{
+        color: #1abb9c;
+        transform: scale(1.05);
+        transition: all 400ms;
+    } 
+    .project-block,.journal-block {
+        margin-right: 0;
+        width: 85%;
+        align-self: center;
+    }
+    .project-block img,.journal-block img {
+        width: 80%;
+    }
+    #nav-btns{
+        bottom: 20px;
+    }
+    .journal-block p {
+        margin-top: 5px;
+    }
+    .footer-block {
+        width: 40%;
+        margin-right: 10px;
+    }
+    
+}
+@media screen and (max-width: 320px){
+    .line-heading h2 {
+        font-size:14px;
+    }
+}
+/* 
+@media screen and (max-width: 480px){
+
+}
+@media (min-width: 375px) and (max-height:850px) {
+
+}
+@media screen and (max-height: 380px){
+
+} */

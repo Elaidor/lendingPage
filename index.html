@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
 
     <title>Portfolio lending</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -17,8 +18,11 @@
     <header>
         <div class="container flex">
             <img src="./img/logo.svg" alt="logo">
+            <div class="menu-burger">
+                <span></span>
+            </div>
             <nav class="top-menu">
-                <ul class="flex">
+                <ul class="nav-menu flex">
                     <li><a href="#">home</a></li>
                     <li><a href="#">pages</a></li>
                     <li><a href="#">journal</a></li>
@@ -46,7 +50,7 @@
                 <h2 class="second-heading">what we do </h2>
                 <img src="./img/line-light.svg" alt="line">
             </div>
-            <div class="weDo-features flex">
+            <div class="weDo-features flex media-flex phone-flex">
                 <div class="weDo-outline">
                     <div class="weDo-features-block">
                         <img src="./img/print.svg" alt="print design">
@@ -85,22 +89,22 @@
                     <img src="./img/line-grey.svg" alt="line">
                 </div>
                 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna posuere velit aliquet.</p>
-                <div class="process-features flex">
+                <div class="process-features flex media-flex phone-flex">
                     <div class="process-block">
                         <img src="./img/Creative Ideas.png" alt="Creative Ideas">
                         <span>1. creatıve ideas</span>
                     </div>
-                    <img src="./img/green-line.svg" alt="green-line">
+                    <img class="process-line" src="./img/green-line.svg" alt="green-line">
                     <div class="process-block">
                         <img src="./img/Rapid Solutionpng.png" alt="Rapid Solution">
                         <span>2. Rapid Solution</span>
                     </div>
-                    <img src="./img/green-line.svg" alt="green-line">
+                    <img class="process-line" src="./img/green-line.svg" alt="green-line">
                     <div class="process-block">
                         <img src="./img/Magic Touch.png" alt="Magic Touch">
                         <span>3. Magic Touch</span>
                     </div>
-                    <img src="./img/green-line.svg" alt="green-line">
+                    <img class="process-line" src="./img/green-line.svg" alt="green-line">
                     <div class="process-block">
                         <img src="./img/Award Winning.png" alt="Award Winning">
                         <span>4. Award Winning</span>
@@ -114,7 +118,7 @@
                 <h2 class="second-heading">our recent projects</h2>
                 <img src="./img/line-light.svg" alt="line">
             </div>
-            <div class="project-field flex">
+            <div class="project-field flex phone-flex">
                 <div class="project-block">
                     <img src="./img/project-cover.png" alt="project-cover">
                     <h3>Dısk cover Mockup</h3>
@@ -170,7 +174,7 @@
                 <h2 class="second-heading">from the journal</h2>
                 <img src="./img/line-light.svg" alt="line">
             </div>
-            <div class="journal-field flex">
+            <div class="journal-field flex phone-flex">
                 <div class="journal-block">
                     <img src="./img/journal-1.png" alt="journal">
                     <div class="top-journal">
@@ -208,7 +212,7 @@
         </section>
     </main>
     <footer>
-        <div class="container flex">
+        <div class="container flex media-flex">
             <div class="footer-block">
                 <div class="footer-heading">Get In Touch</div>
                 <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
@@ -249,6 +253,8 @@
             <div class="container">© <script>document.write(new Date().getFullYear());</script> Loom. All rights reserved. Theme by elemis.</div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/slider.js"></script>
+
 </body>
 </html>

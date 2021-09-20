@@ -4,7 +4,7 @@
   color: #606060; }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto; }
 
 .flex {
@@ -34,9 +34,11 @@ header {
     .top-menu li:last-child {
       margin-right: 0; }
   .top-menu a {
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 400ms; }
     .top-menu a:hover {
-      color: #1abb9c; }
+      color: #1abb9c;
+      transition: all 400ms; }
 
 .main-text {
   font-size: 25px;
@@ -91,9 +93,13 @@ header {
   padding: 2px;
   border: 1px solid #e1e1e1;
   border-radius: 2px;
-  margin-right: 29px; }
+  margin-right: 29px;
+  transition: all 400ms; }
   .weDo-outline:last-child {
     margin-right: 0; }
+  .weDo-outline:hover {
+    transition: all 400ms;
+    box-shadow: 0px 0px 22px 2px rgba(26, 187, 156, 0.2); }
 
 .weDo-features-block {
   padding: 50px 25px;
@@ -101,7 +107,8 @@ header {
   flex-direction: column;
   align-items: center;
   border-radius: 2px;
-  border: 1px solid #e1e1e1; }
+  border: 1px solid #e1e1e1;
+  cursor: pointer; }
 
 .weDo-features-heading {
   font-size: 15px;
@@ -142,7 +149,13 @@ header {
 .process-block {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
+  .process-block img {
+    transition: all 400ms; }
+  .process-block img:hover {
+    opacity: 0.8;
+    transition: all 400ms; }
   .process-block span {
     display: block;
     font-size: 14px;
@@ -159,13 +172,21 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 372px; }
+  max-width: 372px;
+  cursor: pointer;
+  transition: all 400ms; }
+  .project-block:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 400ms; }
   .project-block img {
-    border-radius: 2px; }
+    border-radius: 2px;
+    width: 100%; }
   .project-block h3 {
     font-size: 15px;
     line-height: 26px;
     font-weight: 800;
+    text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 11px; }
@@ -210,7 +231,14 @@ header {
 .journal-block {
   display: flex;
   flex-direction: column;
-  width: 371px; }
+  align-items: center;
+  width: 371px;
+  cursor: pointer;
+  transition: all 400ms; }
+  .journal-block:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 400ms; }
   .journal-block img {
     width: 100%;
     margin-bottom: 20px;
